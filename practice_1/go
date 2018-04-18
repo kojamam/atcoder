@@ -1,0 +1,35 @@
+1
+2 3
+test
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
+
+var sc = bufio.NewScanner(os.Stdin)
+
+func main() {
+	// var line string
+	// var nums []string
+
+	line := nextLine()
+	fmt.Println(line)
+	nums := strings.Split(line, " ")
+	line = nextLine()
+	nums2 := strings.Split(line, " ")
+	nums = append(nums, nums2...)
+	lastString := nextLine()
+
+	fmt.Println(lastString)
+	fmt.Println("string")
+
+}
+
+func nextLine() string {
+	sc.Scan()
+	return sc.Text()
+}
