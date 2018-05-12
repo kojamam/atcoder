@@ -7,7 +7,7 @@ const debug = true
 func main() {
 	var A, B, C int
 	fmt.Scan(&A, &B, &C)
-	nums := inputNums(B)
+	nums := scanNums(B)
 
 	if debug {
 		fmt.Println(A, B, C)
@@ -15,7 +15,7 @@ func main() {
 	}
 }
 
-func inputNums(length int) (nums []int) {
+func scanNums(length int) (nums []int) {
 	var num int
 	for i := 0; i < length; i++ {
 		fmt.Scan(&num)
@@ -24,7 +24,7 @@ func inputNums(length int) (nums []int) {
 	return
 }
 
-func inputStrings(length int) (strings []string) {
+func scanStrings(length int) (strings []string) {
 	var str string
 	for i := 0; i < length; i++ {
 		fmt.Scanf("%s", &str)
