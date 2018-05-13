@@ -5,6 +5,15 @@ import (
 	"math"
 )
 
+/* main */
+
+func main() {
+	var N int
+	fmt.Scan(&N)
+
+	fmt.Println(N)
+}
+
 /* IO */
 
 func scanNums(length int) (nums []int) {
